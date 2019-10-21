@@ -1,0 +1,235 @@
+976	Bacteroidetes
+1090	Chlorobi
+1117	Cyanobacteria
+1224	Proteobacteria
+1239	Firmicutes
+1297	Deinococcus-Thermus
+2763	Rhodophyta
+2836	Bacillariophyta
+3027	Cryptophyta
+3035	Euglenida
+3041	Chlorophyta
+4761	Chytridiomycota
+4890	Ascomycota
+5204	Basidiomycota
+5752	Heterolobosea
+5794	Apicomplexa
+5878	Ciliophora
+6029	Microsporidia
+6040	Porifera
+6073	Cnidaria
+6157	Platyhelminthes
+6217	Nemertea
+6231	Nematoda
+6340	Annelida
+6447	Mollusca
+6656	Arthropoda
+7568	Brachiopoda
+7586	Echinodermata
+7711	Chordata
+10190	Rotifera
+10197	Ctenophora
+10205	Bryozoa
+10214	Rhombozoa
+10219	Hemichordata
+10226	Placozoa
+10229	Chaetognatha
+10232	Acanthocephala
+27563	Onychophora
+28889	Crenarchaeota
+28890	Euryarchaeota
+32066	Fusobacteria
+33209	Orthonectida
+33310	Nematomorpha
+33313	Gastrotricha
+33467	Priapulida
+35493	Streptophyta
+40117	Nitrospirae
+42241	Tardigrada
+43120	Entoprocta
+51516	Kinorhyncha
+51967	Candidatus Korarchaeota
+57723	Acidobacteria
+62680	Candidatus Marinimicrobia
+65842	Fibrobacteres
+66780	Gnathostomulida
+67810	Candidatus Bipolaricaulota
+67812	Candidatus Omnitrophica
+67814	Caldiserica
+67817	Candidatus Aminicenantes
+67818	Candidatus Atribacteria
+67819	Armatimonadetes
+67820	Candidatus Microgenomates
+68297	Dictyoglomi
+69815	Cycliophora
+74015	Candidatus Latescibacteria
+74152	Elusimicrobia
+74201	Verrucomicrobia
+95818	Candidatus Saccharibacteria
+134625	Kiritimatiellaeota
+136419	Cercozoa
+142182	Gemmatimonadetes
+142187	Candidatus Hydrogenedentes
+192989	Nanoarchaeota
+200295	Candidatus Sumerlaeota
+200783	Aquificae
+200795	Chloroflexi
+200918	Thermotogae
+200930	Deferribacteres
+200938	Chrysiogenetes
+200940	Thermodesulfobacteria
+201174	Actinobacteria
+203682	Planctomycetes
+203691	Spirochaetes
+204428	Chlamydiae
+221216	Candidatus Parcubacteria
+256845	Lentisphaerae
+265317	Candidatus Poribacteria
+310840	Loricifera
+363464	Candidatus Gracilibacteria
+419944	Picozoa
+422282	candidate division WWE3
+451459	Blastocladiomycota
+456828	Candidatus Cloacimonetes
+508458	Synergistetes
+544448	Tenericutes
+640293	candidate division NC10
+651137	Thaumarchaeota
+743724	Candidatus Aenigmarchaeota
+743725	Candidatus Diapherotrites
+928852	Candidatus Bathyarchaeota
+1031332	Cryptomycota
+1052197	Candidatus Calescamantes
+1052815	Candidatus Aerophobetes
+1104542	candidate division JL-ETNP-Z39
+1130266	Candidatus Hydrothermae
+1134404	Ignavibacteriae
+1154675	candidate division WPS-1
+1154676	Candidatus Eremiobacteraeota
+1293497	Nitrospinae
+1312402	Xenacoelomorpha
+1379697	candidate division Zixibacteria
+1383058	Candidatus Fervidibacteria
+1448051	candidate division GAL15
+1448933	Candidatus Geoarchaeota
+1448937	candidate phylum NAG2
+1462422	Candidatus Parvarchaeota
+1492816	Colponemidia
+1618330	Candidatus Berkelbacteria
+1618338	candidate division CPR1
+1618339	candidate division CPR2
+1618340	candidate division CPR3
+1619053	Candidatus Peregrinibacteria
+1655434	Candidatus Lokiarchaeota
+1662329	Candidatus Kapabacteria
+1703755	candidate division WOR-3
+1704031	candidate division KD3-62
+1706441	Candidatus Thorarchaeota
+1729712	Candidatus Fermentibacteria
+1752708	Candidatus Rokubacteria
+1752716	Candidatus Dadabacteria
+1752717	Candidatus Curtissbacteria
+1752718	Candidatus Daviesbacteria
+1752719	Candidatus Levybacteria
+1752720	Candidatus Gottesmanbacteria
+1752721	Candidatus Shapirobacteria
+1752722	Candidatus Woesebacteria
+1752723	Candidatus Roizmanbacteria
+1752724	Candidatus Pacebacteria
+1752725	Candidatus Collierbacteria
+1752726	Candidatus Beckwithbacteria
+1752727	Candidatus Campbellbacteria
+1752728	Candidatus Falkowbacteria
+1752729	Candidatus Nomurabacteria
+1752730	Candidatus Amesbacteria
+1752731	Candidatus Magasanikbacteria
+1752732	Candidatus Uhrbacteria
+1752733	Candidatus Yanofskybacteria
+1752734	Candidatus Kaiserbacteria
+1752735	Candidatus Wolfebacteria
+1752736	Candidatus Adlerbacteria
+1752737	Candidatus Moranbacteria
+1752738	Candidatus Giovannonibacteria
+1752739	Candidatus Jorgensenbacteria
+1752740	Candidatus Kuenenbacteria
+1752741	Candidatus Azambacteria
+1798710	Candidatus Melainabacteria
+1801616	Candidatus Woesearchaeota
+1801631	Candidatus Micrarchaeota
+1802339	Candidatus Tectomicrobia
+1817796	Candidatus Abawacabacteria
+1817797	Candidatus Coatesbacteria
+1817798	Candidatus Delongbacteria
+1817799	Candidatus Doudnabacteria
+1817800	Candidatus Edwardsbacteria
+1817801	Candidatus Eisenbacteria
+1817802	Candidatus Firestonebacteria
+1817803	Candidatus Fischerbacteria
+1817804	Candidatus Fraserbacteria
+1817805	Candidatus Glassbacteria
+1817806	Candidatus Handelsmanbacteria
+1817807	Candidatus Lindowbacteria
+1817808	Candidatus Margulisbacteria
+1817809	Candidatus Raymondbacteria
+1817810	Candidatus Riflebacteria
+1817811	Candidatus Schekmanbacteria
+1817812	Candidatus Wallbacteria
+1817898	Candidatus Blackburnbacteria
+1817899	Candidatus Woykebacteria
+1817900	Candidatus Chisholmbacteria
+1817901	Candidatus Andersenbacteria
+1817902	Candidatus Brennerbacteria
+1817903	Candidatus Buchananbacteria
+1817904	Candidatus Colwellbacteria
+1817905	Candidatus Harrisonbacteria
+1817906	Candidatus Jacksonbacteria
+1817907	Candidatus Kerfeldbacteria
+1817908	Candidatus Komeilibacteria
+1817909	Candidatus Liptonbacteria
+1817910	Candidatus Lloydbacteria
+1817911	Candidatus Nealsonbacteria
+1817912	Candidatus Niyogibacteria
+1817913	Candidatus Portnoybacteria
+1817914	Candidatus Ryanbacteria
+1817915	Candidatus Spechtbacteria
+1817916	Candidatus Staskawiczbacteria
+1817917	Candidatus Sungbacteria
+1817918	Candidatus Tagabacteria
+1817919	Candidatus Taylorbacteria
+1817920	Candidatus Terrybacteria
+1817921	Candidatus Veblenbacteria
+1817922	Candidatus Vogelbacteria
+1817923	Candidatus Wildermuthbacteria
+1817924	Candidatus Yonathbacteria
+1817925	Candidatus Zambryskibacteria
+1817926	Candidatus Wirthbacteria
+1819803	Candidatus Desantisbacteria
+1853220	Rhodothermaeota
+1855361	Candidatus Kryptonia
+1913637	Mucoromycota
+1913638	Zoopagomycota
+1915410	Candidatus Verstraetearchaeota
+1930617	Calditrichaeota
+1935021	Candidatus Geothermarchaeota
+1936271	Candidatus Odinarchaeota
+1936272	Candidatus Heimdallarchaeota
+1936987	Balneolaeota
+1978152	Candidatus Marsarchaeota
+2013583	Candidatus Goldbacteria
+2052312	Candidatus Dormibacteraeota
+2052329	candidate division FCPU426
+2093358	Candidatus Abyssubacteria
+2093364	Candidatus Aureabacteria
+2109258	Abditibacteriota
+2138240	Coprothermobacterota
+2202805	Olpidiomycota
+2301208	Candidatus Cerribacteria
+2489521	Hemimastigophora
+2497438	Perkinsozoa
+2497569	Negarnaviricota
+2498705	Candidatus Cryosericota
+2546568	Candidatus Nezhaarchaeota
+2572044	Candidatus Helarchaeota
+2576005	candidate division LCP-89
+2582935	Candidatus Altiarchaeota
+2582950	Candidatus Huberarchaea
