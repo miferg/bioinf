@@ -18,7 +18,7 @@ for filename in files:
 
 print(edge_list)
 
-# EdgeSearch algorythm
+# EdgeSearch algorithm
 i = 0
 while i < len(edge_list):
     seed = edge_list[0]
