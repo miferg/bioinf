@@ -100,7 +100,7 @@ def main():
 Miguel F. Romero, 2021
 github.com/miferg
 cgv_build.py
-    """")
+    """)
   
     print('Loading files.\n')
     genom, annot, mapp = map(read_file, (genom_name, annot_name, mapp_name))
