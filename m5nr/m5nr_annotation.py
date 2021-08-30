@@ -38,7 +38,10 @@ print('Writing output in '+ argv[2])
 
 outfile = open(argv[2], 'w')
 for line in md5s:
-    outfile.write(line +'\t'+ '\t'.join(list(database[line])) +'\n')
+    try:
+        outfile.write(line +'\t'+ '\t'.join(list(database[line])) +'\n')
+    except:
+        pass
 outfile.close()
 
 print('Done!')
