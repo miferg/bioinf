@@ -2,46 +2,72 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
 
 if len(sys.argv[1:]) == 0:
     print("""
-Get the annotations from a list of md5s.
-usage: python3 m5nr_annotation.py database md5s.txt output
-Miguel Romero github.com/miferg""")
+                Get the annotations from a list of md5s.
+                usage: python3 m5nr_annotation.py database database.dict md5s.txt output
+                Available databases: RefSeq, SEED
+                Miguel Romero github.com/miferg
+                """
+                )
     sys.exit()
 
 argv = sys.argv[1:]
 
 import pickle
 
+print()
 print('''
 Get the annotations from a list of md5s.
-Miguel F. Romero github.com/miferg''')
+Miguel Romero github.com/miferg
+''')
 
-print('Database: RefSeq')
+if argv[0] in ['RefSeq','SEED']:
+    print('Database: '+ argv[0])
+else:
+    print('Please use one of the available databases: RefSeq, SEED\n')
+    sys.exit()
 
 print('Loading database, this may take a few minutes (and ~60 GBs of memory).')
 
-try:
-    database = pickle.load(open("INSERT_DATABASE_PATH_HERE", "rb")) ### <--- INSERT THE DATABASE PATH HERE!
-except:
-    print("Please make sure that you downloaded the database and declared it in this script!")
-    sys.exit()
+database = pickle.load(open(os.path.abspath(argv[1]), "rb"))
 
 print('Loading input.')
 
-handle = open(argv[1],'r')
+handle = open(argv[2],'r')
 md5s = handle.read().split('\n')[:-1]
 handle.close()
 
-print('Writing output in '+ argv[2])
+print('Writing output in '+ argv[3])
+outfile = open(argv[3], 'w')
 
-outfile = open(argv[2], 'w')
-for line in md5s:
-    try:
-        outfile.write(line +'\t'+ '\t'.join(list(database[line])) +'\n')
-    except:
-        pass
-outfile.close()
+absent = []
 
-print('Done!')
+if argv[0] == 'RefSeq':
+    for line in md5s:
+        try:
+            outfile.write(line +'\t'+ '\t'.join(list(database[line])) +'\n')
+        except:
+            absent.append(md5)
+    outfile.close()
+
+elif argv[0] == 'SEED':
+    for md5 in md5s:
+        try:
+            ssids = database[md5]
+            for line in ssids:
+                outfile.write(md5 +'\t'+ line)
+        except:
+            absent.append(md5)
+    outfile.close()
+
+if len(absent) > 0:
+    print('There were '+ str(len(absent)) +' md5s missing in the annotation database.')
+    print('Check the m5nr_annotation_missing.txt file.')
+    outfile = open('m5nr_annotation_missing.txt','w')
+    outfile.write('\n'.join(absent) +'\n')
+    outfile.close()
+
+print('Done!\n')
