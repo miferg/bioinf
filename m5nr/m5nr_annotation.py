@@ -8,7 +8,7 @@ if len(sys.argv[1:]) == 0:
     print("""
                 Get the annotations from a list of md5s.
                 usage: python3 m5nr_annotation.py database database.dict md5s.txt output
-                Available databases: RefSeq, SEED
+                Available databases: GenBank, RefSeq, SEED
                 Miguel Romero github.com/miferg
                 """
                 )
@@ -24,13 +24,13 @@ Get the annotations from a list of md5s.
 Miguel Romero github.com/miferg
 ''')
 
-if argv[0] in ['RefSeq','SEED']:
+if argv[0] in ['GenBank','RefSeq','SEED']:
     print('Database: '+ argv[0])
 else:
-    print('Please use one of the available databases: RefSeq, SEED\n')
+    print('Please use one of the available databases: GenkBank, RefSeq, SEED\n')
     sys.exit()
 
-print('Loading database, this may take a few minutes (and ~60 GBs of memory).')
+print('Loading database, this may take a few minutes (and ~97 GBs of memory).')
 
 database = pickle.load(open(os.path.abspath(argv[1]), "rb"))
 
@@ -45,10 +45,18 @@ outfile = open(argv[3], 'w')
 
 absent = []
 
-if argv[0] == 'RefSeq':
-    for line in md5s:
+if argv[0] == 'GenBank':
+    for md5 in md5s:
         try:
-            outfile.write(line +'\t'+ '\t'.join(list(database[line])) +'\n')
+            outfile.write(md5 +'\t'+ database[md5] +'\n')
+        except:
+            absent.append(md5)
+    outfile.close()
+
+if argv[0] == 'RefSeq':
+    for md5 in md5s:
+        try:
+            outfile.write(md5 +'\t'+ '\t'.join(list(database[md5])) +'\n')
         except:
             absent.append(md5)
     outfile.close()
