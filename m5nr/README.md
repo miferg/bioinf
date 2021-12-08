@@ -4,11 +4,11 @@ Get the annotations from a list of md5 sequence identifiers. The output is a tsv
 
 ### Usage:
 
-```python3 m5nr_annotation.py database_name database_file input output```
+```python3 m5nr_annotation.py database_file input output```
 
 Example:
 
-```python3 m5nr_annotation.py RefSeq m5nr_refseq.dict input.txt output.tsv```
+```python3 m5nr_annotation.py m5nr_refseq.dict input.txt output.tsv```
 
 #### Important:
 
