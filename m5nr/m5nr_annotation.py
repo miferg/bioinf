@@ -4,14 +4,15 @@
 Get the annotations from a list of md5s.
 """
 
-
+import pickle
 import sys
 import os
 
 db_dict = {
         'm5nr_genbank.dict':['GenBank','97'],
         'm5nr_refseq.dict':['RefSeq','60'],
-        'm5nr_seed.dict':['SEED','20']
+        'm5nr_seed.dict':['SEED','20'],
+        'm5nr_kegg.dict':['KEGG','6']
         }
 
 if len(sys.argv[1:]) == 0:
@@ -22,19 +23,20 @@ if len(sys.argv[1:]) == 0:
                 m5nr_genbank.dict = GenBank
                 m5nr_refseq.dict = RefSeq
                 m5nr_seed.dict = SEED
-                Miguel Romero github.com/miferg
+                m5nr_kegg.dict = KEGG GENES
+                Miguel F. Romero github.com/miferg
                 """
                 )
     sys.exit()
 
 argv = sys.argv[1:]
 
-import pickle
+
 
 print()
 print('''
 Get the annotations from a list of md5s.
-Miguel Romero github.com/miferg
+Miguel F. Romero github.com/miferg
 ''')
 
 dbfile = os.path.abspath(argv[0]).split('/')[-1]
@@ -68,7 +70,7 @@ if dbfile == 'm5nr_genbank.dict':
             absent.append(md5)
     outfile.close()
 
-if dbfile == 'm5nr_refseq.dict':
+elif dbfile == 'm5nr_refseq.dict':
     for md5 in md5s:
         try:
             outfile.write(md5 +'\t'+ '\t'.join(list(database[md5])) +'\n')
@@ -82,6 +84,14 @@ elif dbfile == 'm5nr_seed.dict':
             ssids = database[md5]
             for line in ssids:
                 outfile.write(md5 +'\t'+ line)
+        except:
+            absent.append(md5)
+    outfile.close()
+
+elif dbfile == 'm5nr_kegg.dict':
+    for md5 in md5s:
+        try:
+            outfile.write(md5 +'\t'+ database[md5] +'\n')
         except:
             absent.append(md5)
     outfile.close()
