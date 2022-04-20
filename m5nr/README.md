@@ -19,3 +19,4 @@ Available databases:
 - GenBank (https://drive.google.com/file/d/1Yv2bEQlke0okkx6tsCOCfnNyLSuUmM_v/view?usp=sharing)
 - RefSeq (https://drive.google.com/file/d/1hdDHxnlmOXMlYdt3TSMCQbXg6toob255/view?usp=sharing)
 - SEED (https://drive.google.com/file/d/1hdDHxnlmOXMlYdt3TSMCQbXg6toob255/view?usp=sharing)
+- KEGG GENES (https://drive.google.com/file/d/1IrDR8oDxbA7Umfbb0DDfQItsNBQZShoG/view?usp=sharing)
