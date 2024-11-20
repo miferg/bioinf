@@ -15,7 +15,7 @@ Get taxonomy strings from ncbi taxon codes.
 Input is a list of tax IDs separated by dashes. Last (or only) should be the most specific.
 Needs the names.dmp and nodes.dmp downloaded from NCBI.
 Usage:
-taxid_to_srings.py names.dmp nodes.dmp INPUT OUTPUT_prefix
+taxid_to_strings.py names.dmp nodes.dmp INPUT OUTPUT_prefix
     """)
     sys.exit()
     
