@@ -49,13 +49,13 @@ def search_parents(queryid, fullname, nodes_dict, id_2_name):
     """Search for a taxonomy code and return the full taxonomy path"""
     parent = nodes_dict[queryid][0]
     #print(parent)
-    if parent == '1':
-        fullname = 'root; '+ id_2_name[queryid][0] +'; '+ fullname[:-2]
+    if parent == '131567':
+        fullname = nodes_dict[queryid][1]+':'+id_2_name[queryid][0] +';'+ fullname.strip(';')
         #print(fullname)
         return fullname
     else:
-        if nodes_dict[queryid][1] in ['genus', 'family','order','class','phylum','superkingdom']: ### Add this if only standard ranks are required!
-            fullname =  id_2_name[queryid][0] +'; '+ fullname
+        if nodes_dict[queryid][1] in ['genus', 'family','order','class','phylum','kingdom']: ### Add this if only standard ranks are required!
+            fullname =  nodes_dict[queryid][1]+':'+id_2_name[queryid][0] +';'+ fullname
         return search_parents(parent, fullname, nodes_dict, id_2_name)
     
 # MAIN PROGRAM
